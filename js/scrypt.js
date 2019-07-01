@@ -11,15 +11,13 @@ let answerOne =
 let appData = {
     budget : money,
     timeData : time,
-    expences : {
-        answerOne : answerTwo,
-        answerThree : answerFour
-    },
-    optinalExpences : {
-
-    },
+    expences : {},
+    optinalExpences : {},
     income : [],
     saving : false
 };
+
+appData.expences.answerOne = answerTwo;
+appData.expences.answerThree = answerFour;
 
 alert(((money - (answerTwo + answerFour))/30).toFixed(2));
