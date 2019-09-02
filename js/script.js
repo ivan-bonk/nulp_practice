@@ -1,4 +1,26 @@
 let money, time;
+let startCalc = document.getElementById('start'),
+    budgetValue = document.querySelector('.budget-value'),
+    daybudgetValue = document.querySelector('.daybudget-value'),
+    levelValue = document.querySelector('.level-value'),
+    expensesValue = document.querySelector('.expenses-value'),
+    optionalexpensesValue = document.querySelector('.optionalexpenses-value'),
+    incomeValue = document.querySelector('.income-value'),
+    monthsavingsValue = document.querySelector('.monthsavings-value'),
+    yearsavingsValue = document.querySelector('.yearsavings-value'),
+    expensesItems = document.getElementsByClassName('expenses-item'),
+    expItemBtn = document.querySelector('.expenses-item-btn'),
+    optionalExpBtn = document.querySelector('.optionalexpenses-btn'),
+    countBudgetBtn = document.querySelector('.count-budget-btn'),
+    optionalExpItems = document.querySelectorAll('.optionalexpenses-item'),
+    chooseIncome = document.querySelector('.choose-income'),
+    checkSavings = document.querySelector('.checksavings'),
+    chooseSum = document.querySelector('.choose-sum'),
+    choosePercent = document.querySelector('.choose-percent'),
+    yearValue = document.querySelector('.year-value'),
+    monthValue = document.querySelector('.month-value'),
+    dayValue = document.querySelector('.day-value');
+
 
 function start () {
     money = parseFloat(prompt("Ваш бюджет на месяц?", ''));
@@ -92,3 +114,4 @@ console.log('Наша програма включает в себя:');
 for (let key in appData) {
     console.log(key);
 }
+
