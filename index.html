@@ -15,74 +15,81 @@
         keeper
     </div>
     <div class="title">
-        Расчет дневного бюджета
+        Розрахунок денного бюджету
     </div>
     <div class="main">
         <div class="data">
-            <div class="choose-expenses">Введите обязательные расходы</div>
-            <input class="expenses-item" type="text" id="expenses_1" placeholder="Наименование">
-			<input class="expenses-item" type="text" id="expenses_2" placeholder="Цена">
-			<input class="expenses-item" type="text" id="expenses_3" placeholder="Наименование">
-			<input class="expenses-item" type="text" id="expenses_4" placeholder="Цена">
-            <button class="expenses-item-btn">Утвердить</button>
+            <div>Введіть місячний дохід</div>
+            <div class="month-income">
+                <input class="month-income-item" type="text" id="general-income" placeholder="Дохід">
+                <button class="month-income-bth">Підтвердити</button>
+            </div>
             
-            <div class="optionalexpenses">Введите необязательные расходы</div>
-			<input class="optionalexpenses-item" type="text" id="optionalexpenses_1">
-			<input class="optionalexpenses-item" type="text" id="optionalexpenses_2">
-			<input class="optionalexpenses-item" type="text" id="optionalexpenses_3">
-            <button class="optionalexpenses-btn">Утвердить</button>
+
+            <div class="choose-expenses">Введіть обов'язкові витрати</div>
+            <input class="expenses-item" type="text" placeholder="Найменування">
+			<input class="expenses-item" type="text" placeholder="Ціна">
+			<input class="expenses-item" type="text" placeholder="Найменування">
+			<input class="expenses-item" type="text" placeholder="Ціна">
+            <div class="exp-item-btns">
+                <button class="add-expenses-btn">Додати</button>
+                <button class="remove-expenses-btn">Забрати</button>
+                <button class="expenses-item-btn">Підтвердити</button>
+            </div>
+        
             
-            <div class="count-budget">Расчет дневного бюджета</div>
-            <button class="count-budget-btn">Рассчитать</button>
+            <div class="optionalexpenses">Введіть необовязкові витрати</div>
+            <input class="optionalexpenses-item" type="text" placeholder="Найменування">
+			<input class="optionalexpenses-item" type="text" placeholder="Ціна">
+			<input class="optionalexpenses-item" type="text" placeholder="Найменування">
+            <input class="optionalexpenses-item" type="text" placeholder="Ціна">
+        
+            <div class="opt-exp-item-btns">
+                <button class="addOptExpensesBtn">Додати</button>
+                <button class="remove-opt-exp-btn">Забрати</button>
+                <button class="optionalexpenses-btn">Підтвердити</button>
+            </div>
             
-            <div class="choose-income-label">Введите статьи возможного дохода через запятую</div>
-            <input class="choose-income" type="text" id="income">
-            
-            <div class="checksavings">Есть ли накопления: 
+            <div class="checksavings">Наявність накопичення: 
                 <input id="savings" type="checkbox" />
             </div>
-            <label for="sum">Сумма</label>
-			<input class="choose-sum" id="sum" type="text">
-			<label for="percent">Процент</label>
-            <input class="choose-percent" id="percent" type="text">
+            <label for="sum">Сума</label>
+			<input class="choose-sum disabled-form" id="sum" type="text" disabled>
+			<label for="percent">Відсоток</label>
+            <input class="choose-percent disabled-form" id="percent" type="text" disabled>
             
             <div class="open">
-                <button class="start" id="start">Начать расчет</button>
+                <button class="start" id="start">Розрахувати</button>
+                <button class="reset">Очистити</button>
             </div>
         </div>
         <div class="result">
             <div class="result-table">
-                <div class="budget">Доход: </div>
-                <div class="budget-value"></div>
+                <div class="budget">Дохід: </div>
+                <div class="budget-value">0</div>
     
                 <div class="daybudget">Бюджет на 1 день: </div>
                 <div class="daybudget-value"></div>
     
-                <div class="level">Уровень дохода: </div>
-                <div class="level-value"></div>
+                <div class="expenses">Обов'язкові витрати: </div>
+                <div class="expenses-value">0</div>
     
-                <div class="expenses">Обязательные расходы: </div>
-                <div class="expenses-value"></div>
+                <div class="optionalexpenses">Можливі витрати: </div>
+                <div class="optionalexpenses-value">0</div>
     
-                <div class="optionalexpenses">Возможные траты: </div>
-                <div class="optionalexpenses-value"></div>
-    
-                <div class="income">Дополнительный доход: </div>
-                <div class="income-value"></div>
-    
-                <div class="monthsavings">Накопления за 1 месяц:</div>
+                <div class="monthsavings">Накопичення за 1 місяць:</div>
                 <div class="monthsavings-value"></div>
     
-                <div class="yearsavings">Накопления за 1 год:</div>
+                <div class="yearsavings">Накопичення за 1 рік:</div>
                 <div class="yearsavings-value"></div>
             </div>
             <div class="time-data">
                 <div class="year">
-                    Год:
+                    Рік:
                     <input class="year-value" type="text" readonly>
                 </div>
                 <div class="month">
-                    Месяц:
+                    Місяць:
                     <input class="month-value" type="text" readonly>
                 </div>
                 <div class="day">
@@ -93,6 +100,6 @@
         </div>
     </div>
 </div>
-    <script src="js/main.js"></script>
+    <script src="js/script.js"></script>
 </body>
 </html>
