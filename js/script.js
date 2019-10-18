@@ -216,14 +216,4 @@ let appData = {
     optinalExpenses : {},
     income : [],
     saving : false,
-    
-    checkSavings: function() {
-        if(appData.saving == true) {
-            let save = parseFloat(prompt("Введите суму накоплений!", ''));
-            let percent = prompt("Введите процент!", '');
-    
-            appData.monthIncome = save/100/12*percent;
-            alert('Доход с Вашего депозита в месяц: ' + appData.monthIncome);
-        }
-    },
 };
